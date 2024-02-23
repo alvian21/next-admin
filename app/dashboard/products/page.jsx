@@ -47,7 +47,7 @@ const ProductsPage = ({ searchParams }) => {
                         <td>13-02-2023</td>
                         <td>10</td>
                         <td className={styles.buttons}>
-                            <Link href="/">
+                            <Link href="/dashboard/products/1">
                                 <button className={`${styles.button} ${styles.view}`}>View</button>
                             </Link>
 

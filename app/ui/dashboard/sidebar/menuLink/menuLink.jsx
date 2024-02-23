@@ -9,8 +9,12 @@ const MenuLink = ({item}) => {
 
     const pathname = usePathname()
 
+    console.log("pathname"+ pathname)
+
+    console.log("item"+item.path)
+
     return (
-        <Link href={item.path} className={`${styles.container} ${pathname === item.path && styles.active}`}>
+        <Link href={item.path} className={`${styles.container} ${pathname.split("/").slice(0, 3).join("/") === item.path && styles.active}`}>
           {item.icon}
           {item.title}
         </Link>
